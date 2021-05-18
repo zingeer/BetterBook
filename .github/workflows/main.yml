@@ -26,10 +26,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
+          tag: ${{ github.ref }}
           file: build/libs/BetterBook.jar
-          release_name: Release ${{ github.ref }}
+          release_name  : Release ${{ github.ref }}
           body: |
             #### Release ${{ steps.get_tag.outputs.tag }}
-          draft: false
           prerelease: false
