@@ -1,0 +1,4 @@
+name: BetterBook
+version: "1.0-SNAPSHOT"
+main: com.github.zingeer.book.Plugin
+api-version: 1.16

@@ -1,0 +1,8 @@
+list_name: "Вырванный лист"
+more_than_pages: "Вы написали больше страниц, чем их есть в книге."
+the_signature: "Вырвать листок с подписью"
+without_signature: "Вырвать листок без подписи"
+signature: "Подпись"
+number_of_pages: "Количество страниц"
+prompt_one: "[SHIFT+ПКМ] Вырвать страницу"
+prompt_two: "[ПКМ] Добавить страницу"

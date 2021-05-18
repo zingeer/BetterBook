@@ -1,0 +1,8 @@
+list_name: "Torn leaf"
+more_than_pages: "You have written more pages than there are in the book."
+the_signature: "Tear out the signature sheet"
+without_signature: "Tear out a piece of paper without a signature"
+signature: "Signature"
+number_of_pages: "Number of pages"
+prompt_one: "[SHIFT+RMB] Tear out the page"
+prompt_two: "[RMB] Add a page"
