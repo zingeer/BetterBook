@@ -21,7 +21,7 @@ tasks {
         options.encoding = "UTF-8"
     }
     jar {
-//        val out = project.findProperty("out")?.toString() ?: "testServer/plugins"
+//        val out = project.findProperty("out")?.toString() ?: "build"
 //        destinationDirectory.set(File("$rootDir/$out"))
         doFirst {
             from({
