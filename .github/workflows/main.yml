@@ -22,12 +22,12 @@ jobs:
         run: ./gradlew build
       - name: Create release
         id: create_release
-        uses: actions/create-release@v1
+        uses: svenstaro/upload-release-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          file: build/libs/BetterBook.jar
           tag_name: ${{ github.ref }}
+          file: build/libs/BetterBook.jar
           release_name: Release ${{ github.ref }}
           body: |
             #### Release ${{ steps.get_tag.outputs.tag }}
