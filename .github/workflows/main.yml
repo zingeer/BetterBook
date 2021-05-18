@@ -12,7 +12,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
+      - name: Set output
+        id: vars
+        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
       - name: Set up JDK 15
         id: get_tag
         uses: actions/setup-java@v1
@@ -29,7 +31,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ github.ref }}
           file: build/libs/BetterBook.jar
-          release_name  : Release ${{ github.ref }}
+          release_name  : Release ${{ steps.vars.outputs.tag }}
           body: |
-            #### Release ${{ steps.get_tag.outputs.tag }}
+            #### Plugin and Source release ${{ steps.vars.outputs.tag }}
           prerelease: false
