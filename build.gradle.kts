@@ -21,8 +21,8 @@ tasks {
         options.encoding = "UTF-8"
     }
     jar {
-        val out = project.findProperty("out")?.toString() ?: "testServer/plugins"
-        destinationDirectory.set(File("$rootDir/$out"))
+//        val out = project.findProperty("out")?.toString() ?: "testServer/plugins"
+//        destinationDirectory.set(File("$rootDir/$out"))
         doFirst {
             from({
                 configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) }
