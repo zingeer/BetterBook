@@ -12,7 +12,7 @@ lang: en_EN
   
 !!Wrong!! You cannot insert a leaf into a workbook in creative mode !!Wrong!!    
   
-Screenshots my work:
+Screenshots my work:  
 ![image](https://user-images.githubusercontent.com/55106456/119278348-fc241600-bc24-11eb-815f-881a82ddf8ee.png)  
 ![image](https://user-images.githubusercontent.com/55106456/119278357-034b2400-bc25-11eb-8089-176c013169e2.png)  
 
