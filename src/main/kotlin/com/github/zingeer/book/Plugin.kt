@@ -29,9 +29,11 @@ class Plugin : JavaPlugin() {
     }
 
     fun loadSetup() {
-        val file = File(dataFolder.absolutePath, "setup.yml")
+        val directory = File(dataFolder.absolutePath)
+        val file = File(directory, "setup.yml")
         if (!file.exists()) {
-            file.writeText("{}")
+            directory.mkdirs()
+            file.createNewFile()
         }
         lang = YamlConfiguration.loadConfiguration(file).getString("lang") ?: run {
             config.set("lang", "en_EN")
